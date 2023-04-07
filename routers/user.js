@@ -36,8 +36,8 @@ users.get("/category/:id", (req, res) => {
   }
 });
 
-// users.post("/category", (req, res) => {
-//   const body = req.body;
-//   res.status(200).send(body);
-// });
+users.post("/category", (req, res) => {
+  const body = req.body;
+  res.status(200).send(body);
+});
 module.exports = users;
