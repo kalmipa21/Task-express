@@ -9,7 +9,7 @@ const list_user = [
     name: "Maspin",
   },
 ];
-users.get("/category", (req, res) => {
+users.get("/profiles", (req, res) => {
   const { hoby, profesion } = req.query;
   res.status(200).send({
     message: "success",
@@ -19,7 +19,7 @@ users.get("/category", (req, res) => {
   });
 });
 
-users.get("/category/:id", (req, res) => {
+users.get("/profiles/:id", (req, res) => {
   const { id } = req.params;
   const findbyID = list_user.find((category) => {
     return (category.id = parseInt(id));
