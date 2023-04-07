@@ -9,6 +9,7 @@ const list_user = [
     name: "Maspin",
   },
 ];
+
 users.get("/profiles", (req, res) => {
   const { hoby, profesion } = req.query;
   res.status(200).send({
